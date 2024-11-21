@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFEEDB;
+    margin: 25px;
+}
+
+h1 {
+    color: #6B8F71;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+#welcome {
+    text-align: center;
+}
+
+dt {
+    color: #6F1A07;
+    font-size: 25px;
+}
+
+dt a{
+    text-decoration: underline;
+    color: #6F1A07;
+}
+
+dt a:hover{
+    color: #C02D0C;
+}
+
+
+dd {
+    color: #BA5B4F;
+    padding: 3px;
+    font-size: 18px;
+}
+
+h1 a {
+    text-decoration: underline;
+    color: #6B8F71;
+}
+
+h1 a:hover {
+    color: #a4c4aa;
+}
+
+nav a {
+    color: #1D3461;
+    text-decoration: none;
+}
+
+nav li:hover {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.active{
+    background-color: #1D3461;
+    color: #FFEEDB;
+}
+
+p {
+    color: #6F1A07;
+}
+
+p a {
+    color: #6B8F71;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 20px;
+    font-size: 18px;
+    border: 1px solid #1D3461;
+    border-radius: 12px;
+    padding: 7px;
+}
+
+
+#imgContainer {
+    max-width: 850px;
+    zoom: 0.8;
+    padding: 10px;
+    margin-left: 27%;
+}
+
+#imgContainer img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#genInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+#edInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+#skInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.abList {
+    margin-right: 20px;
+}
+
+.indent {
+    padding-left: 50px;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container2 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides,
+.mySlides2,
+.mySlides3,
+.mySlides4 {
+    display: none
+}
+
+.slideshow-container img {
+    vertical-align: middle;
+}
+
+.grImg,
+.mlDemoImg,
+.accImg {
+    display: flex;
+    justify-content: center;
+}
+
+.grImg img,
+.mlDemoImg img,
+.accImg img{
+   margin: 2px;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+    cursor: pointer;
+    background-color: rgba(200, 200, 200, 0.6);
+}
+
+.text {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.contactDiv {
+    text-align: center;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(255, 255, 255, 0.813);
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.container {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 70%;
+    /* Could be more or less, depending on screen size */
+}
+
+.contactList{
+    margin-left: 20px;
+    width: 80%;
+}
+
+.horizontal{
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal img{
+    float: right;
+}
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}

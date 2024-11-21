@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles/site.css">
+</head>
+
+<body>
+    <h1>About Me</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a class="active" href="about.html">About</a></li>
+            <li><a href="accomplishments.html">Accomplishments</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a onclick="document.getElementById('id01').style.display='block'">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+
+        <div class="container">
+
+            <h1>Contact Me</h1>
+            <p>Please select your preferred contact method</p>
+            <hr>
+            <div class="horizontal">
+                <div class = "contactList">
+                    <label><b>Email</b></label>
+                    <p><a href="mailto:awoyomi.ab@gmail.com">awoyomi.ab@gmail.com</a></p>
+
+                    <label><b>Phone</b></label>
+                    <p><a href="tel:929-271-7584">929-271-7584</a></p>
+
+                    <label><b>LinkedIn</b></label>
+                    <p><a href="https://www.linkedin.com/in/abolaji-awoyomi/">Abolaji Awoyomi</a></p>
+
+                    <label><b>Resume</b></label>
+                    <p><a href="images/resume.pdf" download>Download resume here</a></p>
+                </div>
+                <!--Source: Abolaji Awoyomi -->
+                <img alt="Bunjee Headshot" src="images/headshot.jpg">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="genInfo">
+        <dl class="abList">
+            <dt>General Information</dt>
+            <dd>I'm 18 years old, born on July 27, 2004.</dd>
+            <dd>I'm originally from Brooklyn, NY.</dd>
+            <dd>I currently reside in Huntington, NY.</dd>
+            <dd>My entire family is from Nigeria.</dd>
+        </dl>
+    </div>
+
+    <div id="edInfo">
+        <dl class="abList">
+            <dt>Education</dt>
+            <dd>Cornell University, Ithaca, NY</dd>
+            <dd class="indent">Cornell WebDev, Member</dd>
+            <dd class="indent">Spikeball Club, Member</dd>
+            <dd class="indent">Expected Graduation May 2026</dd>
+            <dd class="indent">Pursuing a B.S in Information Science</dd>
+            <dd>Trinity School, New York, NY</dd>
+            <dd class="indent">Varsity Indoor and Outdrook Track Captain</dd>
+            <dd class="indent">Peer Leader</dd>
+            <dd class="indent">TrinLabs, Head of Outreach and Education</dd>
+            <dd class="indent">Hacktrin, Outreach Coordinator</dd>
+            <dd class="indent">Jazz Messengers, Lead Bassist/Guitarist</dd>
+            <dd class="indent">BodyBuilding Club, President and Treasurer</dd>
+            <dd></dd>
+        </dl>
+    </div>
+
+    <div id="skInfo">
+        <dl class="abList">
+            <dt>Skills and Interests</dt>
+            <dd>Programming Languages: JavaScript, Python, Java, HTML, CSS, R(Beginner), Typescript(Beginner)</dd>
+            <dd>Applications: Google Workspace, Canva, iMovie, Figma</dd>
+            <dd>Interests: Software Development, UI/UX Design, Social Media, Education, Creative Ideation</dd>
+        </dl>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles/site.css">
+</head>
+
+<body>
+    <h1>Accomplishments</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a class="active" href="accomplishments.html">Accomplishments</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a onclick="document.getElementById('id01').style.display='block'">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+
+        <div class="container">
+
+            <h1>Contact Me</h1>
+            <p>Please select your preferred contact method</p>
+            <hr>
+            <div class="horizontal">
+                <div class = "contactList">
+                    <label><b>Email</b></label>
+                    <p><a href="mailto:awoyomi.ab@gmail.com">awoyomi.ab@gmail.com</a></p>
+
+                    <label><b>Phone</b></label>
+                    <p><a href="tel:929-271-7584">929-271-7584</a></p>
+
+                    <label><b>LinkedIn</b></label>
+                    <p><a href="https://www.linkedin.com/in/abolaji-awoyomi/">Abolaji Awoyomi</a></p>
+
+                    <label><b>Resume</b></label>
+                    <p><a href="images/resume.pdf" download>Download resume here</a></p>
+                </div>
+                <!--Source: Abolaji Awoyomi -->
+                <img alt="Bunjee Headshot" src="images/headshot.jpg">
+
+            </div>
+        </div>
+    </div>
+
+    <dl>
+        <dt>Academic Programs</dt>
+        <dd>Prep for Prep, Contingent XXXVIII(Cum Laude, Samona Society)</dd>
+        <dd>Google Code Next</dd>
+        <dd>Google CSSI</dd>
+        <dd>All Star Code Scholar 2020</dd>
+    </dl>
+    <div class="accImg">
+        <!--Source: Abolaji Awoyomi -->
+        <img alt="Code Next Group Picture" src="images/prep2.jpg">
+        <!--Source: Abolaji Awoyomi -->
+        <img alt="Code Next Group Picture" src="images/prep1.jpg">
+        <!--Source: Abolaji Awoyomi -->
+        <img alt="All Star Code Group Picture" src="images/codeNext.JPG">
+        <!--Source: Abolaji Awoyomi -->
+        <img alt="All Star Code Group Picture" src="images/asc2.jpg">
+    </div>
+
+
+    <dl>
+        <dt>Jobs</dt>
+        <dd>Cornell University, Ithaca, NY</dd>
+        <dd class="indent">Fitness Monitor(September 2022 - Present)</dd>
+        <dd>All Star Code, New York, NY</dd>
+        <dd class="indent">Summer Intensive Teaching Fellow(June - August 2021)</dd>
+        <dd class="indent">Weekend Intensive Teaching Assistant(February - March 2022, February - April 2023)</dd>
+        <dd class="indent">Summer Intensive Teaching Assistant(June - August 2022)</dd>
+        <dd>Just Right Technology, New York, NY</dd>
+        <dd class="indent">Content Creator(March - June 2021)</dd>
+    </dl>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
